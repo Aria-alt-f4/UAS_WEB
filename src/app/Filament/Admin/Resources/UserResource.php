@@ -88,7 +88,7 @@ class UserResource extends Resource
                             ->required()
                             ->multiple()
                             ->relationship('roles', 'name')
-                            ->label('Roles'),
+                            ->label('Roles'),poli
                     ])
                     ->columns(1),
 

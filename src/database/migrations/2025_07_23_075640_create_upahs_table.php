@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('upahs', function (Blueprint $table) {
             $table->id();
 
-            $table->foreignId('karyawan_id')->constrained()->onDelete('cascade');
+            $table->foreignId('karyawans_id')->constrained()->onDelete('cascade');
             $table->string('bulan', 20);
             $table->year('tahun');
             $table->decimal('gaji_pokok', 12, 2);
